@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather For Any City</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+<h1 class="title">Weather For Any City</h1>
+
+<div class="search-div">
+    <input type="text" placeholder="Search Your City" id="input">
+    <button onclick="searchWeather()" class="btn">Search</button>
+</div>
+
+<div class="result">
+    <div class="container-result">
+        <h1 class="title2">Result</h1>
+        <div class="row"><h2 class="result-title">Country Name: <span id="country"></span></h2></div>
+        <div class="row"><h2 class="result-title">City Name: <span id="city"></span></h2></div>
+        <div class="row">
+            <img src="https://cdn.worldweatheronline.com/images/weather/large/113_day_lg.png" alt="">
+            <h2 class="result-title">Temperature: <span id="Temperature"></span>deg</h2>
+        </div>
+        <div class="row"><h2 class="result-title">Humidity: <span id="Humidity"></span>%</h2></div>
+        <div class="row"><h2 class="result-title">Visibility: <span id="visibility"></span></h2></div>
+        <div class="row"><h2 class="result-title">Wind Speed: <span id="windSpeed"></span></h2> Wind Deg: <span id="windDeg"></span> </div>
+        <div class="row"><h2 class="result-title">TimeZone: <span id="timezone"></span></h2></div>
+    </div>
+
+</div>
+        
+    </div>
+    
+
+
+    <script src="app.js"></script>
+</body>
+</html>
